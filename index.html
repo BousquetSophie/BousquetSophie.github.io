@@ -1,0 +1,171 @@
+
+<html>
+
+<head>
+<br>
+	<title> Page personelle de Sophie Bousquet </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="pageperso.css">
+</head>
+
+<body style="background-color:#9de8fa;">
+<h1 id="Accueil">
+<br>
+ <center> Sophie Bousquet </center> </h1>
+<br>
+<br>
+<div id="conteneur">
+	<div id="header">
+
+	<p> Bonjour et bienvenu sur ma page personnelle ! </p>
+	<br>
+	<p>Tout d'abord, je vais me présenter. Je m'apelle Sophie Bousquet, j'ai actuellement 18 ans et je suis d'origine espagnole. <img src="espagne.png" alt="drapeau espagne" height="30px" width="30px"/></p>
+	<br>
+	<p>Je suis étudiante en première année en licence informatique à l'université Paris VIII. Mes ambitions d'avenir sont de travailler dans l'univers du jeu vidéo ou dans l'intelligence artificielle.</p>
+	<br>
+	Je suis une personne très curieuse, qui a toujours envie d'apprendre. Personne motivé, rigoureuse, patiente, attentive, créative, solidaire.
+	<br>
+	<p>J'ai quelques passions tel que le dessin, surtout de type manga, et le piano. J'aime beaucoup les jeux vidéo et les films de science-fiction. Mais ma plus grande passion ce sont les animaux, j'adore passer du temps avec eux et m'en occuper.</p>
+	<br>
+	</div>
+
+
+	<div id="sidebar">
+		<br>
+		<br>
+		<ul>
+			<li><a href="#Accueil"><img src="home.png" alt="logo home" height="20px" width="20px"/>Accueil</a></li>
+			<br>
+			<li><a href="#Projets"><img src="projet.png" alt="logo projet" height="20px" width="20px"/> Mes projets</a></li>
+			<br>
+			<li><a href="#Godot"><img src="godot.png" alt="logo Godot" height="20px" width="20px"/> Mes projets Godot</a></li>
+			<br>
+			<li><a href="#Python"><img src="python.jpeg" alt="logo python" height="20px" width="20px"/> Mes projets Python</a></li>
+			<br>
+			<li><a href="#Parcours"><img src="parcours.jpeg" alt="logo parcours" height="20px" width="20px"/> Mon parcours</a></li>
+			<br>
+			<li><a href="#CV"><img src="cv.png" alt="logo cv" height="20px" width="20px"/> Mon CV</a></li>
+			<br>
+			<li><a href="#Contact"><img src="email.jpg" alt="logo mail" height="20px" width="20px"/> Contact</a></li>
+			
+		</ul>
+		<br>
+		<br>
+	</div>
+
+
+	<div id="contenu">
+		<h2 id="Projets"><img src="projet.png" alt="logo projet" height="30px" width="30px"/> Mes projets :</h2>
+		<br>
+		<p> Dans cette section nous allons retrouver tout les projets que j'ai fait et ceux à venir.
+		<br>
+		<br>
+		<h3 id="Godot"><img src="godot.png" alt="logo Godot" height="30px" width="30px"/> Mes projets Godot :</h3>
+		<br>
+		
+		<p>Dans cette section nous allons retrouver les projets que j'ai fait sur la plateforme Godot.</p>
+		<br>
+		
+		<h4><img src="luciole2.png" alt="luciole" height="30px" width="30px"/> Firefly Dreams </h4>
+			<br>
+			<img src="projetgodot.png" alt="image projet godot" height="350px" width="350px"/>
+			<br>
+			<br>
+			<p> S’échapper de son propre rêve angoissant, c’est l’idée de jeux que nous avons eu. Un escape game en 2D avec 3 niveaux à passer qui met en avant une ambiance sombre. Pour pouvoir s’échapper, des lucioles nous aides à trouver le bon chemin.<img src="luciole2.png" alt="luciole" height="30px" width="30px"/></p>
+			<br>
+			<p>Deux fins sont possibles : une où le jeu est gagné et l’autre où le jeu se fini sur une défaite. Le premier niveau consiste à se diriger vers chaque lucioles qui apparait pour avoir accès à la sortie, pour le deuxième il faut suivre le chemin de lumière et enfin pour le troisième il faut suivre la direction donnée par les lucioles pour accéder à la sortie finale.</p>
+			<br>
+			<img src="cinématique win.png" alt="fin win" height="350px" width="500px"/>
+			<br>
+			<p>Cependant si on décide de ne pas suivre la flèche indiquée par les lucioles au troisième niveau et qu’on continue d’avancer sans descendre l’échelle, le joueur retournera sur ses pas sans possibilité de revenir au troisième niveau et perdra.</p>
+			<br>
+			<img src="cinématique loose.png" alt="fin loose" height="350px" width="500px"/>
+			<br>
+			<p><img src="lumiere.png" alt="lumiere" height="30px" width="30px"/> Effet de lumière : 
+			<br>
+			<br>
+			Notre projet, « firefly dreams » est basé en partie sur les effets de lumière qui sont centrés principalement sur les lucioles. Pour cela nous avons utilisé le nœud light 2D dans les scènes de lucioles tel que luciole 1, luciole 2, luciole 3, luciole 4, lot de luciole 1,2 et 3 et flèche de luciole à laquelle on a rajouté une texture de lumière. Nous avons aussi modifier la couleur de la light 2D sur les chandeliers afin de le mettre en rouge. Pour faire ressortir la lumière, on a utilisé un canvasmodulate dans le main, ce qui nous a permis d’assombrir la scène.</p>
+			<br>
+			<p>Collision :
+			<br>
+			<br>
+			Pour les collisions on a utiliser le nœud Staticbody2D auquel on a rajouter un nœud enfant de type collisionshape2D. On a utilisé les collisions pour les bords d’image, les murs et les ligne imaginaire dans les différente scène de jeu (notre jeu est vu de face donc afin que notre personnage ne marche pas sur les murs, on a du mettre des lignes imaginaire). Pour être plus précis, nous avons utilisé (dans le deuxième niveau) Collisionpolygonshape2D pour sélectionner exatement l’élément où l’appliquer. 
+			<br>
+			<br>
+			De plus, les collisions sont aussi présentes dans les scènes de luciole de type Area 2D. Elles permettent de faire disparaitre une luciole ou un lot de luciole (exemple: luciole 1) losque le personnage rentre en collision avec et d’en faire apparaitre une autre (exemple : luciole 2).
+			<br>
+			<br>
+			De même, lorsque le personnage rentre en collision avec la porte cela nous permet de nous déplacer d’une scène à l’autre. </p>
+			<br>
+			<p>Pour les animations de déplacement on a utilisé la fonction get input; il y a donc walk left/right (touche q et d), up/down (touche z et s), aussi à la fin du jeu il y a l’animation pour descendre l’échelle (touche E). Pour que la caméra suive le personnage lors de ses déplacements, on utilise fonction physic process.</p>
+			<br>
+			<p> Toute la partie graphique, animation, décors ainsi que la musique ont été créés par nous-même.
+			<br>
+			<p> Ce jeu a été créé en collaboration avec ma camarade Dounia Hullot. </p>
+			<br>
+			<p>Pour plus d'informations et d'explications voici notre rapport sur le jeu : </p>
+			<br>
+			<a href="Rapport du jeu Firefly Dreams.pdf" download="Rapport de Firefly Dreams">Rapport Firefly Dreams</a>
+			<br>
+			<br>
+			<p> Voici le lien pour télécharger les fichiers de notre jeu : </p>
+			<br>
+			<a href="Firefly Dreams.zip" download="Firefly Dreams">Firefly Dreams</a>
+			<br>
+			
+		<h5 id="Python"><img src="python.jpeg" alt="logo python" height="30px" width="30px"/> Mes projets Python :</h5>
+		
+		<h6><img src="Dames.png" alt="logo Dames" height="30px" width="30px"/> Solveur de Dames </h4>
+			<p>Mon premier projet python est un solveur de Dames qui a pour but de faire jouer deux IA entre elles.
+			<br>
+			<br>
+			Le projet est en cours de préparation, pour le moment nous avons créé la partie graphique à l'aide de Tkinter qui nous a permis de créer le plateau de dames et placer les différents pions sur ce même plateau. 
+			<br>
+			<br>
+			<img src="Dames 2.png" alt="Plateau Dames" height="200px" width="200px"/>
+			<br>
+			<br>
+			Nous sommes actuellement entrain de créer les déplacements des pions afin que le pion glisse sur la case choisie.
+			<br>
+			<br>
+			 Puis nous allons créer les IA en utilisant les algorithmes MinMax et éventuellement l'algorithme élagage alpha-bêta.</p>
+			 <br>
+		
+		<h7 id="Parcours"><img src="parcours.jpeg" alt="logo parcours" height="30px" width="30px"/> Mon parcours </h7>
+			<br>
+			<br>
+			<p> Dans cette section je vais vous présenter mon parcours, c'est-à-dire les différentes écoles où je suis aller.</p>
+			<br>
+			<p>Tout d'abord, je suis allée au collège Saint Exupéry à Noisy-le-Grand où j'ai obtenu mon Brevet des collèges.</p>
+			<br>
+			<p>Par la suite, je suis allée au lycée Flora Tristan à Champs-sur-Marne.</p>
+			<p>En seconde j'ai appris l'informatique grâce à une option qu'il y avait.</p>
+			<p>Puis en premiere j'ai pris les spécialités Mathématiques, Sciences de la vie et de la Terre et Physique-Chimie.</p>
+			<p>Enfin, en Terminal j'ai décidé de garder les spécialités Physique-Chimie et Sciences de la vie et de la Terre.</p>
+			<br>
+			<p>Actuellement je suis en licence informatique à l'université Paris VIIIs.</p>
+			<br>
+			
+		<h8 id="CV"><img src="cv.png" alt="logo cv" height="30px" width="30px"/> Mon CV </h8>
+		<br>
+		<br>
+		<img src="CV.png" alt="aperçus cv" height="400px" width="300px"/>
+		<br>
+		<p> Voici le lien pour télécharger mon Cv en PDF: </p>
+		<a href="Cv 2.pdf" download="cv">Cv en PDF</a>
+		<br>
+		<br>
+		<p> Voici le lien pour télécharger mon Cv en latex : </p>
+		<a href="Cv 2.zip" download="cv">Cv en Latex</a>
+		<br>
+		<br>
+		<h9 id="Contact"><img src="email.jpg" alt="logo mail" height="30px" width="30px"/> Contact </h9>
+			<br>
+			<br>
+			<p> Mail professionnel : Sophie.bousquet62@gmail.com </p>
+			<br>
+			
+	</div>
+<img src="déco.png" alt="décoration" height="150px" width="500px" style="position:fixed;bottom:0px;right:0px;"/>
+</div>
+

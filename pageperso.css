@@ -1,0 +1,94 @@
+
+p{
+	font-size:1em;
+}
+
+h1{
+	font-size: 1.5em;
+	font-weight: bold;
+	text-decoration: underline;
+	width:1830px; height: 100px;
+	background: url(fond.jpg) no-repeat;
+	background-size: 3020px 300px;
+	
+}
+
+h2{
+	font-size: 1.4em;
+	font-family: ;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+h3{
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+h4{
+	font-size: 1.1em;
+	font-weight:normal;
+	text-decoration: underline;
+}
+
+h5{
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+h6{
+	font-size: 1.1em;
+	font-weight:normal;
+	text-decoration: underline;
+}
+
+h7{
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+h8{
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+h9{
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#header {
+	margin-left: 450px;
+}
+
+#conteneur {
+	width:1700px; margin:0 auto;
+}
+
+#sidebar {
+	float: left; width:400px;
+	background: url(bordure.png) no-repeat;
+	background-size: 300px 400px;
+	position: fixed; top: 150px;
+}
+
+#contenu {
+	margin-left: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
